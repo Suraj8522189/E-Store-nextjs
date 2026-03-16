@@ -19,7 +19,7 @@ export default function Slider() {
     setcurrentSlide(
       (currentValue) => {
         if(currentValue == images.length -1){
-          return 0
+          return 0;
         }else {
           return currentValue + 1;
         }

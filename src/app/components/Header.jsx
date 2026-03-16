@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "@/styles/header.module.css";
 import Container from './Container'
 import {FiSearch, FiShoppingCart} from "react-icons/fi";
+import Link from 'next/link';
 
 export default function Header() {
   return (
@@ -34,10 +35,14 @@ const NavBar = () => {
         <nav className='flex items-center gap-5'>
             <ul className='flex items-center gap-3 font-semibold'>
             <li className={styles.navLink}>
+                <Link href={"/"} >
                 Home
+                </Link>
             </li>
             <li className={styles.navLink}>
+                <Link href={"/store"} >
                 Store
+                </Link>
             </li>
             </ul>
             <div className='flex items-center gap-4'>
